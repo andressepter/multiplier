@@ -1,4 +1,3 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL; -- Use only numeric_std for unsigned
@@ -17,7 +16,7 @@ architecture Behavioral of TopLevel is
     signal Product : STD_LOGIC_VECTOR(15 downto 0);
     signal hex_digit : STD_LOGIC_VECTOR(3 downto 0);
     signal refresh_counter : integer := 0;
-    signal display_select : STD_LOGIC_VECTOR (2 downto 0) := "000";
+    signal display_select : unsigned (2 downto 0) := "000";
     constant DELAY : integer := 20000000; -- 0.2 seconds @ 100 MHz
 begin
     A <= SW(7 downto 0);

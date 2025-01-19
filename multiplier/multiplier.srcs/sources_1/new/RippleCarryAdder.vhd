@@ -21,12 +21,13 @@ begin
     carry(0) <= Cin;
 
     gen_adder: for i in 0 to data_width-1 generate
-        process(A, B, carry)
         begin
-            Sum(i) <= A(i) xor B(i) xor carry(i);
-            carry(i+1) <= (A(i) and B(i)) or (A(i) and carry(i)) or (B(i) and carry(i));
-        end process;
-    end generate;
+            process(A, B, carry)
+            begin
+                Sum(i) <= A(i) xor B(i) xor carry(i);
+                carry(i+1) <= (A(i) and B(i)) or (A(i) and carry(i)) or (B(i) and carry(i));
+            end process;
+        end generate;
 
     Cout <= carry(data_width);
 end Behavioral;

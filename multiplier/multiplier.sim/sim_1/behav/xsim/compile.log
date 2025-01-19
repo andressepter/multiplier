@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/asepter/Insync/ansept@taltech.ee/OneDrive Biz/multiplier/multiplier/multiplier.srcs/sources_1/new/RippleCarryAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RippleCarryAdder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/asepter/Insync/ansept@taltech.ee/OneDrive Biz/multiplier/multiplier/multiplier.srcs/sources_1/new/Multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Multiplier'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/asepter/Insync/ansept@taltech.ee/OneDrive Biz/multiplier/multiplier/multiplier.srcs/sources_1/new/TopLevel.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TopLevel'
