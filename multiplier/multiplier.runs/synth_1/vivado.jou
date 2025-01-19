@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:36:28 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Sun Jan 19 21:25:00 2025
+# Process ID: 709210
+# Current directory: /home/asepter/Insync/ansept@taltech.ee/OneDrive Biz/multiplier/multiplier/multiplier.runs/synth_1
+# Command line: vivado -log TopLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel.tcl
+# Log file: /home/asepter/Insync/ansept@taltech.ee/OneDrive Biz/multiplier/multiplier/multiplier.runs/synth_1/TopLevel.vds
+# Journal file: /home/asepter/Insync/ansept@taltech.ee/OneDrive Biz/multiplier/multiplier/multiplier.runs/synth_1/vivado.jou
+# Running On        :pop-os
+# Platform          :Pop
+# Operating System  :Pop!_OS 22.04 LTS
+# Processor Detail  :AMD Ryzen 3 PRO 4450U with Radeon Graphics
+# CPU Frequency     :3791.697 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16059 MB
+# Swap memory       :20354 MB
+# Total Virtual     :36414 MB
+# Available Virtual :20157 MB
+#-----------------------------------------------------------
+source TopLevel.tcl -notrace

@@ -1,0 +1,61 @@
+
+*** Running vivado
+    with args -log TopLevel.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source TopLevel.tcl -notrace
+
+
+****** Vivado v2024.1.2 (64-bit)
+  **** SW Build 5164865 on Thu Sep  5 14:36:28 MDT 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Sun Jan 19 21:29:41 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file '/home/asepter/.Xilinx/Vivado/2024.1/strategies/Vivado Implementation Defaults.Vivado Implementation 2024.psg' discarded because strategy with same name already parsed from '/tools/Xlinix/Vivado/2024.1/strategies/VDI2024.psg'
+source TopLevel.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1390.734 ; gain = 22.805 ; free physical = 531 ; free virtual = 18767
+Command: link_design -top TopLevel -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1747.648 ; gain = 0.000 ; free physical = 626 ; free virtual = 18291
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/asepter/Insync/ansept@taltech.ee/OneDrive Biz/multiplier/multiplier/multiplier.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/home/asepter/Insync/ansept@taltech.ee/OneDrive Biz/multiplier/multiplier/multiplier.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1962.238 ; gain = 0.000 ; free physical = 548 ; free virtual = 18147
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1966.207 ; gain = 575.473 ; free physical = 540 ; free virtual = 18139
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net Product[1] has multiple drivers: CA_OBUF_inst_i_12/O, and CA_OBUF_inst_i_11/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net Product[2] has multiple drivers: CA_OBUF_inst_i_32/O, CA_OBUF_inst_i_31/O, and CA_OBUF_inst_i_33/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net Product[3] has multiple drivers: CA_OBUF_inst_i_22/O, CA_OBUF_inst_i_21/O, CA_OBUF_inst_i_19/O, and CA_OBUF_inst_i_20/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net Product[4] has multiple drivers: CA_OBUF_inst_i_9/O, CA_OBUF_inst_i_6/O, CA_OBUF_inst_i_10/O, CA_OBUF_inst_i_8/O, and CA_OBUF_inst_i_7/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net Product[5] has multiple drivers: CA_OBUF_inst_i_18/O, CA_OBUF_inst_i_16/O, CA_OBUF_inst_i_17/O, CA_OBUF_inst_i_15/O, CA_OBUF_inst_i_13/O, and CA_OBUF_inst_i_14/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net Product[6] has multiple drivers: CA_OBUF_inst_i_39/O, CA_OBUF_inst_i_38/O, CA_OBUF_inst_i_37/O, CA_OBUF_inst_i_40/O, CA_OBUF_inst_i_35/O, CA_OBUF_inst_i_34/O, and CA_OBUF_inst_i_36/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net Product[7] has multiple drivers: CA_OBUF_inst_i_29/O, CA_OBUF_inst_i_30/O, CA_OBUF_inst_i_23/O, CA_OBUF_inst_i_27/O, CA_OBUF_inst_i_26/O, CA_OBUF_inst_i_25/O, CA_OBUF_inst_i_24/O, and CA_OBUF_inst_i_28/O.
+INFO: [Project 1-461] DRC finished with 7 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.69 . Memory (MB): peak = 2056.988 ; gain = 90.781 ; free physical = 483 ; free virtual = 18118
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 0 Warnings, 0 Critical Warnings and 8 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 19 21:30:01 2025...
