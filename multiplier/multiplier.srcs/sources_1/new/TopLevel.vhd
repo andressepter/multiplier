@@ -1,7 +1,7 @@
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL; -- Use only numeric_std for unsigned
 
 entity TopLevel is
     port (
@@ -119,5 +119,3 @@ begin
         end case;
     end process;
 end Behavioral;
-
-
